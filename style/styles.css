@@ -133,7 +133,7 @@ b.max-bold{ font-weight: 700; }
 	position: relative;
 	background-size: cover;
 	z-index: 1;
-	//background-image: url(../../images/slider-3-1920x1080.jpg);
+	background-image: url(../img/DUKE.jpg);
 	background-color: #00539B;
 }
 
