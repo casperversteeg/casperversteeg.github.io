@@ -261,14 +261,39 @@ b.max-bold{ font-weight: 700; }
 4. ABOUT SECTION
 --------------------------------- */
 
-.radial-progress{ position: relative; max-width: 200px; margin: 0 auto; }
+.radial-progress{
+	position: relative;
+	max-width: 200px;
+	margin: 0 auto;
+}
 
-.radial-progress .progressbar-text{ font-size: 32px; font-weight: 500;
-	padding-bottom: 0px!important; color: #333!important; }
+.radial-progress .progressbar-text{
+	font-size: 32px;
+	font-weight: 500;
+	padding-bottom: 0px!important;
+	color: #333!important;
+}
 
 
-.radial-progress .progress-title{ position: absolute; top: 90%; left: 50%; width: 100%;
-	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #777; }
+.radial-progress .progress-title{
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 150%;
+	letter-spacing: 0;
+	text-align: center;
+	transform: translate(-50%, 15px);
+	color: #777;
+}
+
+.radial-prog-area{
+	padding-bottom: 100%;
+}
+
+.radial-pad{
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 
 /* ---------------------------------

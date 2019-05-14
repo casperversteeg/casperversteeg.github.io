@@ -51,6 +51,12 @@ function enableRadialProgress() {
     case "A":
       progPercent = 60;
       break;
+    case "A+":
+      progPercent = 60;
+      break;
+    case "S":
+      progPercent = 60;
+      break;
     }
     var bar = new ProgressBar.Circle(this, {
       color : '#aaa',
