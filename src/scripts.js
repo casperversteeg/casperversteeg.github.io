@@ -13,6 +13,7 @@ function enableRadialProgress() {
 
   $(".radial-progress").each(function() {
     var $this = $(this), SprogPercent = $this.data('prog-grade');
+    var sColor = $this.data('color');
     var progPercent;
     switch (SprogPercent) {
     case "F":
@@ -63,12 +64,12 @@ function enableRadialProgress() {
       strokeWidth : 3,
       trailWidth : 1,
       easing : 'easeInOut',
-      duration : 1400,
+      duration : 700,
       text : {
 
       },
       from : {color : '#aaa', width : 1},
-      to : {color : '#00539B', width : 3},
+      to : {color : sColor, width : 3},
       // Set default step function for all animate calls
       step : function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
