@@ -279,20 +279,21 @@ b.max-bold{ font-weight: 700; }
 	position: absolute;
 	top: 100%;
 	left: 50%;
-	width: 150%;
+	width: 140%;
 	letter-spacing: 0;
 	text-align: center;
 	transform: translate(-50%, 15px);
 	color: #777;
 }
 
-.radial-prog-area{
+/* .radial-prog-area{
 	padding-bottom: 100%;
-}
+} */
 
 .radial-pad{
 	margin-left: 10px;
 	margin-right: 10px;
+	padding-bottom: 90px;
 }
 
 
