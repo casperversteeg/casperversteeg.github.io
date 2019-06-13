@@ -63,7 +63,7 @@ span{ display: inline-block; }
 
 button{ outline: 0; border: 0; background: none; cursor: pointer; }
 
-.icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
+.icon{ font-size: 1.05em; display: inline-block; line-height: inherit; }
 
 [class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
 
