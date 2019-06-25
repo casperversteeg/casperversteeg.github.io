@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/ionicons.css">
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/collapsible.css">
     <!-- <link rel="stylesheet" href="style/responsive.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet"> <!--ion icons-->
 
+    <script src="src/common.js"></script>
   </head>
   <body>
     <section class="intro-section">
@@ -68,10 +71,131 @@
   				<div class="col-sm-12 col-md-3">
   					<div class="heading">
   						<h3><b>Projects</b></h3>
-  						<h6 class="font-lite-black"><b>RESEARCH & DEVELOPMENT</b></h6>
+  						<h6 class="font-lite-black"><b>RESEARCH, DEVELOPMENT, AND PERSONAL INTEREST</b></h6>
+              Jump to section:
+
+                <p><a href="#personal">Personal</a>
+                <br/><a href="#graduate">Graduate</a>
+                <br/><a href="#gradresearch">Grad Research</a>
+                <br/><a href="#gradcourses">Grad Courses</a>
+                <br/><a href="#Undergrad">Undergraduate</a>
+                <br/><a href="#ugradresearch">Undergrad Research</a>
+                <br/><a href="#ugradcourses">Undergrad Courses</a></p>
+              </ul>
   					</div>
   				</div><!-- col-sm-3 -->
   				<div class="col-sm-12 col-md-9">
+            <h3 id="personal">Personal</h3>
+
+            <button class="collapsible">Personal 1</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <button class="collapsible">Personal 2</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <br/>
+            <h3 id="graduate">Graduate</h3>
+            <h5 id ="gradresearch"><b>Research:</b></h5>
+            <button class="collapsible">Grad Research 1</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <button class="collapsible">Grad Research 2</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <br/>
+            <h5 id ="gradcourses"><b>Courses:</b></h5>
+            <button class="collapsible">Grad Course 1</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <button class="collapsible">Grad Course 2</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <br/>
+            <h3 id ="ugrad">Undergraduate</h3>
+            <h5 id ="ugradresearch"><b>Research:</b></h5>
+            <button class="collapsible">Undergrad Research 1</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <button class="collapsible">Undergrad Research 2</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <br/>
+            <h5 id ="ugradcourses"><b>Courses:</b></h5>
+            <button class="collapsible">Undergrad Courses 1</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
+
+            <button class="collapsible">Undergrad Courses 2</button>
+            <div class="content">
+              <div class="summary">
+                <p>Summary / abstract</p>
+              </div>
+              <div class="expandable">
+                <p>Put hidable content here</p>
+              </div>
+            </div>
 
   				</div><!-- col-sm-9 -->
   			</div><!-- row -->
@@ -80,4 +204,6 @@
 
 
   </body>
+  <script src="src/collapsible.js"></script>
+
 </html>
