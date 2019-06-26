@@ -41,7 +41,10 @@
 .content p:first-child{
   padding-top: 18px !important;
 }
-
 .content p:last-child{
+  padding-bottom: 18px !important;
+}
+
+.content a:last-child{
   padding-bottom: 18px !important;
 }
