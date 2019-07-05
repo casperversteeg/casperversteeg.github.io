@@ -2,14 +2,70 @@
 <html lang="en-us">
 <script type="text/javascript">date_cre = new Date(2019, 5, 21);</script>
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-   <script>
-       $("head").load("/src/head.html");
-   </script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casper Versteeg Portfolio</title>
+    <!-- <link rel="stylesheet" href="style/fluidbox.min.css"> -->
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/ionicons.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/collapsible.css">
+    <!-- <link rel="stylesheet" href="style/responsive.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet"> <!--ion icons-->
+
+    <script src="src/common.js"></script>
+  </head>
   <body>
-    <div include-html="/content/header.html"></div>
+    <section class="intro-section">
+  		<div class="container">
+
+  			<div class="heading-wrapper">
+  				<div class="row">
+  						<a class="menu-btn" href="index.html">Home</a>
+              <a class="menu-btn" href="professional.html">Professional</a>
+              <a class="menu-btn active" href="#">Projects</a>
+              <a class="menu-btn" href="publications.html">Publications</a>
+              <a class="menu-btn" href="photos.html">Photos</a>
+              <a class="menu-btn" href="contact.html">Contact</a>
+              <a class="menu-btn" href="src/CasperVersteegResume2019.pdf">Download CV</a>
+          </div><!-- row -->
+
+  			</div><!-- heading-wrapper -->
+
+  			<div class="intro">
+  				<div class="row">
+
+  					<div class="col-sm-8 col-md-4 col-lg-3">
+  						<div class="profile-img margin-b-30"><img src="img/headshot.jpeg" alt=""></div>
+  					</div><!-- col-sm-8 -->
+
+  					<div class="col-sm-10 col-md-5 col-lg-6">
+  							<h2><b>Casper Versteeg</b></h2>
+  							<h4>Ph.D. Student</h4>
+  							<ul class="information margin-tb-30">
+  								<li><b>Ph.D. Mechanical Engineering</b> : Duke University (e. 2023)</li>
+  								<li><b>B.Sc. Mechanical Engineering</b> : University of Georgia (2018)</li>
+  							</ul>
+  							<ul class="social-icons">
+                  <li><a href="https://www.linkedin.com/in/casper-versteeg/"><i class="icon ion-logo-linkedin"></i></a></li>
+  								<li><a href="https://twitter.com/CasperVersteeg"><i class="icon ion-logo-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon ion-logo-reddit"></i></a></li>
+                  <li><a href="https://github.com/casperversteeg"><i class="icon ion-logo-github"></i></a></li>
+                  <li><a href="https://scholars.duke.edu/display/per0031722"><i class="icon ion-md-contact"></i></a></li>
+                  <li><a href="https://dolbow.pratt.duke.edu"><i class="icon ion-md-school"></i></a></li>
+                  <li><a href="http://smallsat.uga.edu"><i class="icon ion-md-rocket"></i></a></li>
+  							</ul>
+  					</div><!-- col-sm-8 -->
+
+  				</div><!-- row -->
+
+  			</div><!-- intro -->
+  		</div><!-- container -->
+  	</section><!-- intro-section -->
 
     <section class="about-section section">
   		<div class="container">
@@ -44,7 +100,7 @@
             </div> -->
 
             <br/>
-            <h3 id="graduate"><img src="/img/Duke_University_Crest.svg.png" style="display: inline; max-height:1.9em; width: 1.546em"></img> Graduate</h3>
+            <h3 id="graduate"><img src="img/Duke_University_Crest.svg.png" style="display: inline; max-height:1.9em; width: 1.546em"></img> Graduate</h3>
             <h5 id ="gradresearch"><b>Research:</b></h5>
 
             <!--<button class="collapsible">Fluid Structure Interaction</button>
@@ -62,40 +118,40 @@
             <button class="collapsible">Phase-Field Fracture in 1D Spall Model</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/phase-field-spall.html">Read more...</a>
+                <a href="projects/phase-field-spall.html">Read more...</a>
             </div>
 
             <button class="collapsible">Delaunay Mesher</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/delaunay-mesher.html">Read more...</a>
+                <a href="projects/delaunay-mesher.html">Read more...</a>
             </div>
 
             <br/>
-            <h3 id ="ugrad"><img src="/img/GEORGIA-GTV-FC-611x1024.png" style="display: inline; max-height:1.9em; width: 1.13em"></img>  Undergraduate</h3>
+            <h3 id ="ugrad"><img src="img/GEORGIA-GTV-FC-611x1024.png" style="display: inline; max-height:1.9em; width: 1.13em"></img>  Undergraduate</h3>
             <h5 id ="ugradresearch"><b>Research:</b></h5>
             <button class="collapsible">Thermal Management of High Heat Small Satellite Payloads</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/high-heat-smallsat-payload.html">Read more...</a>
+                <a href="projects/high-heat-smallsat-payload.html">Read more...</a>
             </div>
 
             <button class="collapsible">Structural-Thermal Optical Performance Analysis of Small Satellite Payloads</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/STOP-analysis-for-smallsat.html">Read more...</a>
+                <a href="projects/STOP-analysis-for-smallsat.html">Read more...</a>
             </div>
 
             <button class="collapsible">Preliminary Optical Performance Testing for the SPOCeye Payload</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/prelim-optical-testing.html">Read more...</a>
+                <a href="projects/prelim-optical-testing.html">Read more...</a>
             </div>
 
             <button class="collapsible">Preliminary Thermal Analysis of Small Satellites</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/prelim-thermal-of-smallsat.html">Read more...</a>
+                <a href="projects/prelim-thermal-of-smallsat.html">Read more...</a>
             </div>
 
             <br/>
@@ -103,31 +159,31 @@
             <button class="collapsible">Senior Capstone</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/senior-capstone.html">Read more...</a>
+                <a href="projects/senior-capstone.html">Read more...</a>
             </div>
 
             <button class="collapsible">Finite Element Analysis</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/ugrad-fea.html">Read more...</a>
+                <a href="projects/ugrad-fea.html">Read more...</a>
             </div>
 
             <button class="collapsible">Mechanical Chaotic Vibration</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/mechanical-chaotic-vibration.html">Read more...</a>
+                <a href="projects/mechanical-chaotic-vibration.html">Read more...</a>
             </div>
 
             <button class="collapsible">Upright Robot/Inverted Pendulum</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/feedback-upright-robot.html">Read more...</a>
+                <a href="projects/feedback-upright-robot.html">Read more...</a>
             </div>
 
             <button class="collapsible">Structure from Motion in MATLAB</button>
             <div class="content">
                 <p>Put hidable content here</p>
-                <a href="/projects/sensors-structure-from-motion.html">Read more...</a>
+                <a href="projects/sensors-structure-from-motion.html">Read more...</a>
             </div>
 
   				</div><!-- col-sm-9 -->
@@ -137,6 +193,6 @@
 
 
   </body>
-  <script src="/src/collapsible.js"></script>
+  <script src="src/collapsible.js"></script>
 
 </html>

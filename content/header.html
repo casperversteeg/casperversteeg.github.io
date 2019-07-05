@@ -41,8 +41,28 @@
 
       </div><!-- row -->
         <div class="col-sm-8 col-md-4 col-lg-3" id="rev-history">
-          <p class="margin-b-10">Page created on:</p>
-          <p class="margin-b-10">Last modified on:</p>
+          <p class="margin-b-10"><table>
+            <tr>
+              <td>Page created on:&nbsp;</td>
+              <td>[<span id="page_created"></span>]</td>
+            </tr>
+            <tr>
+              <td>Last modified on:&nbsp;</td>
+              <td>[<span id = "last_modified"></span>]</td>
+            </tr>
+          </table></p>
+          <script type="text/javascript">
+            // get created and modified dates and write to header
+            var date_mod = new Date(document.lastModified);
+            document.getElementById("page_created").innerHTML =
+                date_mod.getFullYear() + "/" +
+                ((date_cre.getMonth()>10)?date_cre.getMonth():"0"+date_cre.getMonth()) +
+                "/" + ((date_cre.getDate()>10)?date_cre.getDate():"0"+date_cre.getDate());
+            document.getElementById("last_modified").innerHTML =
+                date_mod.getFullYear() + "/" +
+                (((date_mod.getMonth()>=10)?date_mod.getMonth()+1:"0"+(date_mod.getMonth()+1))) +
+                "/" + ((date_mod.getDate()>10)?date_mod.getDate():"0"+date_mod.getDate());
+          </script>
       </div>
     </div><!-- intro -->
   </div><!-- container -->

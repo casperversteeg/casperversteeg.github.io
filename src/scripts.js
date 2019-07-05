@@ -16,6 +16,9 @@ function enableRadialProgress() {
     var sColor = $this.data('color');
     var progPercent;
     switch (SprogPercent) {
+    case "IP":
+      progPercent = 0;
+      break;
     case "F":
       progPercent = 0;
       break;
