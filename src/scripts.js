@@ -4,7 +4,7 @@
 "use strict";
 
 // RADIAL PROGRESS BAR
-enableRadialProgress();
+$(document).ready(enableRadialProgress());
 
 $('a[href="#"]').on('click', function(event) { return; });
 })(jQuery);
