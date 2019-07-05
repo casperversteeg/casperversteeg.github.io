@@ -101,7 +101,7 @@ b.max-bold{ font-weight: 700; }
 .font-lite-black{ color: #999; }
 
 #rev-history{
-	float: inline-end;
+	float: right;
 	padding-top: 20px;
 }
 
