@@ -98,3 +98,9 @@ function isExists(elem) {
   }
   return false;
 }
+//
+// $(document).ready(function() {
+//   var url = window.location.href;
+//   alert(window.location.href);
+//   var btns = document.getElementsByClassName("menu-btn");
+// });
