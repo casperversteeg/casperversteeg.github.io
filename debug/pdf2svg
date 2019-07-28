@@ -1,0 +1,5 @@
+inkscape -l out.svg in.pdf
+
+OR:
+
+pdf2svg in.pdf out.svg

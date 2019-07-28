@@ -1,0 +1,101 @@
+<!DOCTYPE html5>
+<html lang="en-us">
+<script type="text/javascript">date_cre = new Date(2019, 6, 15);</script>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script>
+       $("head").load("/src/head.html");
+   </script>
+</head>
+  <body>
+    <div include-html="/content/header.html"></div>
+
+    <section class="about-section section">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-sm-12 col-md-3">
+  					<div class="heading">
+  						<h3><b>LaTeX File Structure</b></h3>
+  						<h6 class="font-lite-black"><b>Personal</b></h6>
+  					</div>
+  				</div><!-- col-sm-3 -->
+  				<div class="col-sm-12 col-md-9">
+            <div style="float:right">
+              <div>
+                <img src="/img/docutree.svg" width="199px" height="570px"/>
+              </div>
+              <div>
+                <b>Figure 1.</b> File structure diagram
+              </div>
+            </div>
+            <p>For the longest time, I wrote all my LaTeX papers as one giant
+            document that could become incredibly tough to navigate. I spent
+            a long time looking for a file structure template that suits my
+            needs, but was never really satisfied with anything I found. So, I
+            decided to make my own:
+            <a href="https://github.com/casperversteeg/latex-project-template"
+              style="text-decoration:underline">Link to GitHub project.</a></p>
+            <br/>
+            <p>One of the things I was really looking for, was something that would
+            allow me to do all the things I've been doing with LaTeX, but without
+            the eternal hassle of copy-pasting document templates. Instead, I wanted
+            something overseeable and simple to operate. Ideally, I was looking for
+            something that resembled the structure used in the <a
+            href="/projects/delaunay-mesher.html">Delaunay Mesher project</a> because
+            I found that particularly convenient.</p>
+            <br/>
+            <p>In the past, I have always used <a
+              href="https://www.xm1math.net/texmaker/">Texmaker</a> for LaTeX typesetting,
+            but I have been migrating all my text editing to <a href="https://atom.io">
+              Atom</a>. Atom provides a few packages for compiling LaTeX in-editor, although
+            I was never really satisfied with those either, as I never really had the
+            level of control I was looking for. Instead, I drew inspiration from the
+            Delaunay Mesher project, and created this structure in such a way that
+            <code>make</code> would do the exact same as <code>build</code> in Texmaker.</p>
+            <br/>
+            <p>So that's where we are. The template structure organizes all the aspects
+            of a LaTeX project (i.e. bibliographies, classes and styles, images, etc.) into
+            a set of sub-folders, which are all brought together into a single
+            <code>.pdf</code> file with the <code>make</code> command. The most immediate
+            consequence of this, is that all sections are split up into their own individual
+            files (with the <code>standalone</code> documentclass), meaning they are
+            much lighter and simpler to navigate than large, bulky projects. Furthermore,
+            re-ordering sections is as simple as moving a single <code>\input{}</code> or
+            <code>\import{}</code> line.</p>
+            <br/>
+            <p>Most of the development time went into figuring out the <code>Makefile</code>.
+            I was not too familiar with how to build a <code>Makefile</code>, and had mostly
+            relied on combining functionality from other projects or online examples. A
+            popular solution for my specific problem is the <code>latexmk</code> package,
+            although I was running into too many issues trying to compile these modular
+            documents. Indeed, the simpler solution is usually the better one, so I wrote
+            a <code>Makefile</code> based on some tutorials I had found, and just built
+            my LaTeX documents the same way I had always configured Texmaker: with
+            <code>pdflatex</code>. So that's what it does. It envokes the <code>pdflatex</code>
+            function as many times as I know necessary for most of my previous projects,
+            and makes compiling the bibliography a separate option. Lastly, there are some
+            other options that have made my life easier from time to time, such as
+            <code>clean</code>, <code>verbose</code> for debugging, <code>force</code> in
+            case it's not recognizing changes to sub-files (and it never will), <code>bib</code>
+            and <code>index</code> for making bibliographies and indeces, and <code>superclean</code> to
+            remove pretty much everything and restores the repository to just the bare <code>.tex</code>
+            files.</p>
+            <br/>
+            <p>Now, it has some disadvantages, unfortunately. Primarily, it's not really
+            too efficient as it will always run <code>pdflatex</code> three times, even
+            though that may not be necessary. Furthermore, <code>latexmk</code> has the
+            functionality to watch changes in included <code>.tex</code> files, and would
+            re-compile the document whenever an included file was changed. While useful,
+            this functionality could also be quite infuriating whenever <code>latexmk</code>
+            would get stuck on errors, so it's not included in this project (also in part
+            because I haven't the faintest how I would go about implementing such a thing).</p>
+  				</div><!-- col-sm-9 -->
+  			</div><!-- row -->
+  		</div><!-- container -->
+  	</section><!-- about-section -->
+
+
+  </body>
+  <script src="/src/collapsible.js"></script>
+
+</html>
