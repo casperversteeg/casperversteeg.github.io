@@ -3,13 +3,13 @@
 
     <div class="heading-wrapper">
       <div class="row">
-          <a class="menu-btn" href="/index.html">Home</a>
-          <a class="menu-btn" href="/professional.html">Professional</a>
-          <a class="menu-btn" href="/projects/index.html">Projects</a>
-          <a class="menu-btn" href="/publications.html">Publications</a>
-          <a class="menu-btn" href="/photos.html">Photos</a>
-          <a class="menu-btn" href="/blog.html">Blog</a>
-          <a class="menu-btn" href="/contact.html">Contact</a>
+          <a class="menu-btn" id="home" href="/index.html">Home</a>
+          <a class="menu-btn" id="professional" href="/professional.html">Professional</a>
+          <a class="menu-btn" id="projects" href="/projects/index.html">Projects</a>
+          <a class="menu-btn" id="publications" href="/publications.html">Publications</a>
+          <a class="menu-btn" id="photos" href="/photos.html">Photos</a>
+          <a class="menu-btn" id="blog" href="/blog.html">Blog</a>
+          <a class="menu-btn" id="contact" href="/contact.html">Contact</a>
           <a class="menu-btn" href="/src/CasperVersteegResume2019.pdf">Download CV</a>
       </div><!-- row -->
 
@@ -45,24 +45,24 @@
           <p class="margin-b-10"><table>
             <tr>
               <td>Page created on:&nbsp;</td>
-              <td>[<span id="page_created"></span>]</td>
+              <td><span id="page_created"></span></td>
             </tr>
             <tr>
               <td>Last modified on:&nbsp;</td>
-              <td>[<span id = "last_modified"></span>]</td>
+              <td><span id = "last_modified"></span></td>
             </tr>
           </table></p>
           <script type="text/javascript">
             // get created and modified dates and write to header
             var date_mod = new Date(document.lastModified);
             document.getElementById("page_created").innerHTML =
-                date_mod.getFullYear() + "/" +
+                "[" + date_mod.getFullYear() + "/" +
                 ((date_cre.getMonth()>10)?date_cre.getMonth():"0"+date_cre.getMonth()) +
-                "/" + ((date_cre.getDate()>10)?date_cre.getDate():"0"+date_cre.getDate());
+                "/" + ((date_cre.getDate()>10)?date_cre.getDate():"0"+date_cre.getDate()) + "]";
             document.getElementById("last_modified").innerHTML =
-                date_mod.getFullYear() + "/" +
+                "[" + date_mod.getFullYear() + "/" +
                 (((date_mod.getMonth()>=10)?date_mod.getMonth()+1:"0"+(date_mod.getMonth()+1))) +
-                "/" + ((date_mod.getDate()>10)?date_mod.getDate():"0"+date_mod.getDate());
+                "/" + ((date_mod.getDate()>10)?date_mod.getDate():"0"+date_mod.getDate()) + "]";
           </script>
       </div>
     </div><!-- intro -->
